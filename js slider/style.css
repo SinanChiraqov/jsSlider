@@ -14,18 +14,46 @@ body {
   text-align: center;
   justify-content: space-around;
 }
-.slider-box {
-  width: 1000px;
-  height: 600px;
+.slider__box {
+  background: url("./images/1.jpg");
+  width: 100%;
+  height: 100vh;
   border: 1px solid black;
-  border-radius: 2rem;
-}
-.slider-box img {
-  border-radius: 2rem;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: .5s linear;
 }
 button {
-  font-size: 5rem;
-  color: aliceblue;
+  font-size: 3rem;
+  color: aqua;
   background: transparent;
   border: none;
+  position: absolute;
+  z-index: 5;
+  outline: none;
+  width: 50%;
+  height: 100vh;
+}
+
+#prew {
+  text-align: start;
+  left: 15px;
+}
+#next {
+  text-align: end;
+  right: 15px;
+}
+.slider__text {
+  position: absolute;
+  bottom: 50px;
+  left: 80px;
+  padding: 1.5rem;
+  color: azure;
+  background-color: rgba(0, 0, 0, .5);
+  text-align: left;
+  width: 60%;
+}
+.slider_subtitle {
+  width: 50%;
 }
